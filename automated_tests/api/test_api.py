@@ -1,10 +1,12 @@
 import json
 
 import allure
+import pytest
 import requests
 
 
 @allure.title('Get Info API: Get existed card info')
+@pytest.mark.smoke
 def test_get_card_info_validate_response():
     """Test checks response data fields of succeeded response"""
 
@@ -64,4 +66,3 @@ def test_get_unknown_card_info():
 
         with allure.step(f"details = {error_message}"):
             assert response_content['detail'] == error_message, 'Wrong error message'
-

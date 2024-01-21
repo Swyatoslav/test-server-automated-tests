@@ -131,7 +131,7 @@ def test_search_by_unexisted_card_number(common_page):
 @pytest.mark.parametrize('card_number, error_text',
                          [
                              ('qwerty123', 'Card number should contain only digits'),
-                             (' ', 'Card number can\'t be empty'),
+                             (' ', 'Card number should contain only digits'),
                              ('', 'Card number can\'t be empty')
                          ],
                          ids=['Contains letters', 'Only whitespace', 'Empty text'])
