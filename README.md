@@ -7,7 +7,7 @@
        pip3 install -r requirements.txt
 
 
-2. Launch test-server on http://localhost:8080 URL
+2. Launch test-server on http://localhost:8000 URL
 
 3. Run all tests using command
 
